@@ -176,7 +176,7 @@ nav.scrolled .nav-logo img {
     color: var(--primary-light);
 }
 
-/* Menu mobile expandido */
+/* Menu mobile */
 .mobile-menu-expanded {
     display: none;
     position: fixed;
@@ -773,9 +773,7 @@ footer {
     transform: translateY(0);
 }
 
-/* ======================================================= */
 /* MEDIA QUERIES PARA RESPONSIVIDADE OTIMIZADA */
-/* ======================================================= */
 
 @media (max-width: 1200px) {
     .nav-menu {
@@ -1065,7 +1063,6 @@ footer {
 
 /* Para telas muito pequenas (celulares pequenos) */
 @media (max-width: 576px) {
-    /* Ajustes finos para celulares pequenos */
     html {
         font-size: 13px; /* Base ainda menor */
     }
@@ -1094,7 +1091,6 @@ footer {
         font-size: 0.95rem;
     }
     
-    /* Cards ainda mais compactos */
     .service-card {
         padding: 1rem 0.8rem;
     }
