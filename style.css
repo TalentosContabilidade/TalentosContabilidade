@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap');
 
 * {
     margin: 0;
@@ -255,17 +255,24 @@ nav.scrolled .nav-logo img {
 }
 
 .hero h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: clamp(2.8rem, 6vw, 4.2rem);
+    font-family: 'Playfair Display', 'Poppins', serif;
+    font-size: clamp(3.2rem, 9vw, 5.5rem);
     margin-bottom: 1.5rem;
     color: var(--light);
-    font-weight: 700;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-    line-height: 1.2;
+    font-weight: 800;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    line-height: 1.15;
+    letter-spacing: 0.5px;
 }
 
 .hero h1 .text-gold {
     color: var(--primary);
+    font-style: italic;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--primary-light), var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero p {
@@ -302,6 +309,7 @@ nav.scrolled .nav-logo img {
     font-size: clamp(0.95rem, 2vw, 1.15rem);
     border: 1.5px solid rgba(212, 175, 55, 0.5);
     transition: var(--transition);
+    white-space: nowrap;
 }
 
 .secondary-button:hover {
@@ -804,8 +812,8 @@ details p {
 }
 
 .fixed-button {
-    width: 3rem; /* Botão menor */
-    height: 3rem;
+    width: 3.8rem;
+    height: 3.8rem;
     background: var(--primary-dark);
     border-radius: 50%;
     display: flex;
@@ -824,7 +832,7 @@ details p {
 
 .fixed-button i {
     color: var(--dark);
-    font-size: 1.5rem; /* Ícone menor */
+    font-size: 1.9rem;
 }
 
 /* Footer */
@@ -1009,7 +1017,7 @@ footer {
     }
     
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
         margin-bottom: 1rem;
     }
     
@@ -1186,7 +1194,7 @@ footer {
     }
     
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     
     .hero p {
@@ -1232,19 +1240,19 @@ footer {
         gap: 1.2rem;
     }
     
-    /* Botões fixos menores */
+    /* Botões fixos - um pouco menores que no desktop, mas maiores que antes */
     .fixed-buttons {
         bottom: 1rem;
         right: 1rem;
     }
     
     .fixed-button {
-        width: 2.8rem;
-        height: 2.8rem;
+        width: 3.4rem;
+        height: 3.4rem;
     }
     
     .fixed-button i {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
     
     /* Footer mais compacto */
